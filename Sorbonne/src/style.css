@@ -1,38 +1,70 @@
-body {background-color:rgb(24, 24, 24);}
+body {background-image: linear-gradient(to right, #310909, #1b1217);
+      background-attachment: fixed;}
+   
 img {
   position: relative;
   top: 100px;
-  height: 90px;
-  width: 90px;
-}
-@font-face {
-	src: url('fonts/Sketch Gothic School.ttf'); 
-  font-family: 'Sketch';
-  font-style: normal;}
-t2{
-	position: relative;
-	top: 100px;
-	font-family: 'Sketch';
-    color: white;
-    font-size: 70px;
-    font-weight:100;
-   
-  }
-div{
-	
-
-    animation-name: example;
-  	animation-duration: 4s;
-  	text-align: center;
-}
-@keyframes example {
-  from {font-size: 500px;}
-/*  25% {background-image: url(img/note.png);
-  		background-repeat: no-repeat;}*/
- /* to {background-image: url(img/note.png);
-  		background-repeat: no-repeat;
-  		position: absolute;  	}*/
-  		
+  height: 110px;
+  width: 110px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   
 }
-
+@font-face {
+	src: url('fonts/Wendell_v1.ttf'); 
+  font-family: 'Wendell';
+  font-style: normal;}
+t2{
+  position: relative;
+  font-family: 'Wendell';
+  color: white;
+  font-size: 30px;
+  top: 120px; 
+  text-align: center;
+  border-radius: 0%;
+  }
+.intro{
+    animation-name: example;
+  	animation-duration: 4s;
+    text-align: center;
+    animation-fill-mode: forwards;
+   
+  
+}
+@keyframes example {
+   0% {top: 10;} 
+  100% {opacity: 0;top: 20;
+      visibility: hidden;}
+  
+}
+@keyframes fadein{
+  0% {opacity: 0; visibility: hidden;}
+  100% {opacity: 1;
+        visibility: visible;}
+}
+.saisi{
+  
+  animation-name: fadein;
+  animation-delay: 3.5s;
+  text-align: center;
+  animation-fill-mode: backwards;
+}
+  
+  #welcome {
+    bottom: 90px;
+    position: relative;
+    font-family: 'Wendell';
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 0%;
+  }
+  #text{
+    text-align: center;
+    position: relative;
+    font-family: 'Gadget';
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }  
