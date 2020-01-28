@@ -25,17 +25,19 @@ t2{
   border-radius: 0%;
   }
 .intro{
-    animation-name: example;
+    
   	animation-duration: 4s;
     text-align: center;
-    animation-fill-mode: forwards;
-   
-  
+}
+.intro.hidden{
+  animation-name: example;
+  animation-fill-mode: forwards;
+
 }
 @keyframes example {
-   0% {top: 10;} 
-  100% {opacity: 0;top: 20;
-      visibility: hidden;}
+   0% {font-size: 100px;} 
+   100% {opacity: 0;top: 20;
+      visibility: hidden;} 
   
 }
 @keyframes fadein{
@@ -65,6 +67,63 @@ t2{
     position: relative;
     font-family: 'Gadget';
     color: white;
-    font-size: 20px;
+    font-size: 13px;
     text-align: center;
   }  
+  * {box-sizing: border-box;}
+
+
+.header {
+  height: 50px;
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:10 ;
+    background:#12171c ;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: rgb(56, 43, 43);
+  color: black;
+}
+
+.header a.active {
+  background-color: rgb(44, 15, 15);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}

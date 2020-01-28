@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-<header></header>
+<header> <div class="header">
+    <a href="#default" class="logo">E-S</a>
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </div></header>
 <div class="intro"><img src="src/img/Escape_Sorbone.png"><br><t2>Escape Sorbonne</t2></div>
 <div class="saisi">
-<t1 id="welcome">Bienvenue dans Escape Sorbone</t1><br>
-    <t1 id="text">veuillez saisir votre pseudo pour commencer</t1>
-          <form method="post">
+<h1 id="welcome">Bienvenue dans Escape Sorbone</h1><br>
+    <h1 id="text">veuillez saisir votre pseudo pour commencer</h1>
+          <form method="post" action="index2.html">
             <div>
                 <br><input type="text" id="name" name="user_name" placeholder="pseudo">
             </div>
@@ -24,7 +31,8 @@
 <script type="text/javascript">
 window.addEventListener("load",function(){
     const intro = document.querySelector(".intro");
-    loader.className += " hidden";
+    // Console.log(intro);
+    intro.className += " hidden";
 });
  </script>
 </body>
