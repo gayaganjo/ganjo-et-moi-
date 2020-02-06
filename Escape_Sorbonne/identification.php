@@ -13,11 +13,10 @@
     <form action="" method="post">
        
         <div class="quiz">
-            <input type="text" name="Nom" id="Nom" placeholder="votre nom" required><br>
-            <input type="password" name="PassWord" id="PassWord" placeholder="votre mot de pass" required><br>
-            <!-- <input type="password" name="conpassword" id="conpassword" placeholder="confirmer votre mot de pass" required><br> -->
+            <input class="t" type="text" name="Nom" id="Nom" placeholder="votre nom" required><br><br>
+            <input class="t" type="password" name="PassWord" id="PassWord" placeholder="votre mot de pass" required><br>
             <br>
-            <button type="submit" name="formlogin" >Identification</button>
+            <button class="but button4" type="submit" name="formlogin" >Identification</button>
         </div>
     </form>
 <?php 

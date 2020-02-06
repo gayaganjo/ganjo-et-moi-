@@ -137,8 +137,42 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto;
   font-weight: lighter;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
    }
-
+   .welcome {
+    color: white;
+    font-family: "Open Sans", sans-serif,bold;
+    width: 80%;
+    margin: 0 auto;
+    top: 20px;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+     }
+   .article {
+    color: white;
+    font-family: "Open Sans", sans-serif,bold;
+    width: 90%;
+    font-size: 30px;
+    margin: 0 auto;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+     }
+     .article-l {
+      color: white;
+      font-family: "Open Sans", sans-serif,bold;
+      width: 90%;
+      font-size: 30px;
+      margin: 0 auto;
+      font-weight: lighter;
+      margin-left: auto;
+     
+    
+       }
 .questions p {
  
   font-size: 1.3em; }
@@ -185,13 +219,13 @@ src: url('fonts/Wendell_v1.ttf');
 font-family: 'Wendell';
 font-style: normal;}
 t2{
-position: relative;
-font-family: 'Wendell';
-color: white;
-font-size: 30px;
-top: 120px; 
-text-align: center;
-border-radius: 0%;
+  position: relative;
+  font-family: 'Wendell';
+  color: white;
+  font-size: 30px;
+  top:120px;
+  text-align: center;
+  border-radius: 0%;
 }
 .intro{
 
@@ -242,7 +276,7 @@ text-align: center;
 * {box-sizing: border-box;}
 
 
-.header {
+/* .header {
 height: 50px;
 position: fixed;
 height: 10%;
@@ -251,7 +285,7 @@ top: 0;
 left: 0;
 z-index:10 ;
 background:#12171c ;
-}
+} */
 
 .header a {
 float: left;
@@ -264,11 +298,13 @@ line-height: 25px;
 border-radius: 4px;
 }
 
-.header a.logo {
-font-size: 25px;
-height: 50px;
-width: 50px;
-font-weight: bold;
+.logo {
+font-size: 15px;
+height: 5px;
+width: 5px;
+
+/* background-image: url("src/img/Escape_Sorbonne.png"); */
+/* font-weight: bold; */
 }
 
 .header a:hover {
@@ -297,12 +333,13 @@ float: none;
 }
 }
 .t{
-	color: white;
+	color: rgb(29, 10, 10);
   font-family: "Open Sans", sans-serif;
   /* width: 80%; */
   margin: 0 auto;
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 15px;
+  text-align: center;
   }
   
   .col-lg-5 {
@@ -313,3 +350,39 @@ float: none;
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .but {
+    background-color: rgb(172, 131, 115);
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+     }
+
+.button4 {border-radius: 12px;}
+#rcorners2 {
+  border-radius: 25px;
+  /* background-image: linear-gradient(to top, #8b6060, #471818); */
+  border: 1px solid rgb(110, 66, 66);
+  padding: auto; 
+  width: auto;
+  height: auto;  
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin : 0 auto;
+  text-align: center;
+  /* vertical-align: middle; */
+}
+.form_ins {
+  padding: 40px;
+  padding-bottom: 50px;
+  margin : 0 auto;
+  text-align: center;
+}
+#form_1{
+ padding-bottom: 50px;
+}
